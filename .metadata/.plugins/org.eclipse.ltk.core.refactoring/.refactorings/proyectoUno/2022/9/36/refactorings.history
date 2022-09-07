@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;proyectoUno/src/caculos.h&apos; to &apos;calculos.h&apos;" description="Rename resource &apos;caculos.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/caculos.h" name="calculos.h" stamp="1662077745996" updateReferences="false"/>
+</session>

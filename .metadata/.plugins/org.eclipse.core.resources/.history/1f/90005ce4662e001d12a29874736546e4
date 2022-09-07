@@ -1,0 +1,56 @@
+/*
+ * validacion.c
+ *
+ *  Created on: 7 sep. 2022
+ *      Author: Axex Shop
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+char gradoValidacion (){
+
+	char grados;
+	do {
+	printf ("Ingrese la  temperatura(f para fahrenheit) O (c para celsius):");
+	 fflush(stdin);
+	scanf ("%c",&grados);
+
+	} while (!(grados == 'f' || grados =='c'));
+	return grados ;
+
+} // fIN DE TEMERATURA.
+
+int temperaturaValidacion (char grados){
+
+	int temperaturaF=0;
+	int temperaturaC=0;
+	int retorno;
+	switch (grados) {
+		case 'f':
+		do {
+			printf ("Ingrese la  temperatura: ");
+			scanf ("%d",&temperaturaF);
+		} while (!(temperaturaF < 32 || temperaturaF > 212 ));
+			  break;
+		case 'c':
+			do {
+				printf ("Ingrese la  temperatura: ");
+				scanf ("%d",&temperaturaC);
+
+			} while (!(temperaturaC < 0 || temperaturaC >100));
+
+			  break;
+		}
+
+	if (temperaturaF !=0){
+		retorno = temperaturaF;
+	}else {
+		retorno= temperaturaC;
+	}
+
+return retorno;
+
+} // fIN DE TEMERATURA.
+
+

@@ -1,0 +1,23 @@
+/*
+ *
+Realizar un programa EN EL MAIN que permita calcular y mostrar
+ el factorial de un número. Utilizar la función PedirNumero
+  de la ejercitación 3-4.
+
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	setbuf(stdout, NULL);
+
+	int numeroIngresado;
+
+	printf ("Ingrese un numero:");
+	scanf("%d",&numeroIngresado);
+
+
+
+	return 0;
+}

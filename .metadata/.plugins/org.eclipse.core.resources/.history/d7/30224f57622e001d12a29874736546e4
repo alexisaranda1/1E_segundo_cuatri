@@ -1,0 +1,20 @@
+/*
+ * calculos.c
+ *
+ *  Created on: 7 sep. 2022
+ *
+ */
+int calculos (){
+
+	int temperatura;
+
+	do {
+	printf ("Ingrese la  temperatura: ");
+	scanf ("%c",&temperatura);
+
+	} while (!(temperatura == 'f' || temperatura =='c'));
+	return 0 ;
+
+} // fIN DE TEMERATURA.
+
+

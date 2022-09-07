@@ -1,0 +1,45 @@
+/*
+ ============================================================================
+ Name        : ejercicioUno.2
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+
+//bibliotecas.
+#include <stdio.h>
+#include <stdlib.h>
+
+// int main funcion principal.
+//nombre parametros y debolucion.
+
+int main(void) {
+	setbuf(stdout,NULL);
+
+	//variables.
+    int numeroUno;
+    int numeroDos;
+    int suma;
+
+    //pedir un numro por consola por scanf.
+    printf("numeroUno: ");
+    scanf("%d", &numeroUno); // "%d" de digito.
+    printf("numeroDos: ");
+    scanf("%d", &numeroDos);
+    fflush(stdin);
+
+    suma = numeroUno + numeroDos;
+
+    printf(" La suma es: %d ", suma);
+
+    return 0;
+}
+
+int sumarEnteros ( int numeroUno, int numeroDos){
+	int resultado;
+	resultado = numeroUno + numeroDos;
+	return 0;
+}

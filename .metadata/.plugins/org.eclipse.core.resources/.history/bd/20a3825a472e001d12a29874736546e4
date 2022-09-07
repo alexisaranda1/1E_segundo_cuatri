@@ -1,0 +1,24 @@
+/*
+ * bliblioUno.c
+ *
+ *  Created on: 5 sep. 2022
+ *      Author: Axex Shop
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int perdirNumero (void){
+
+	int numeroIngresado;
+	int retorno;
+
+		printf ("Ingrese un numero:\n");
+		scanf("%d",&numeroIngresado);
+
+		retorno = numeroIngresado;
+
+	return retorno;
+}// fin de pedirNumero
+
+

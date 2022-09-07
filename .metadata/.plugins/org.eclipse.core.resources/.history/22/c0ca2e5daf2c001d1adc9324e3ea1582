@@ -1,0 +1,33 @@
+/*
+ *
+Crear una función que pida el ingreso de un entero y lo retorne.
+
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+ int entero (int);
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int numeroIngresado;
+
+ numeroIngresado = entero ();
+	return 0;
+
+} // fin de la funcion main.
+
+
+ int entero (int numero){
+
+	 int respuesta;
+
+
+		 respuesta = numero;
+
+
+	 return respuesta;
+ }

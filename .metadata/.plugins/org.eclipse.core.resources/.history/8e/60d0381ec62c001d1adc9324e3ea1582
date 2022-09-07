@@ -1,0 +1,94 @@
+/* Realizar un programa en donde se puedan utilizar
+ los prototipos de la función Sumar en sus 4 combinaciones.
+
+
+ int Sumar1(int, int);
+ int Sumar2(void);
+ void Sumar3(int, int);
+ void Sumar4(void);
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+int sumarUno(int, int);
+int sumarDos(void);
+
+void sumarTres(int, int);
+void sumarCuatro(void);
+
+int main() {
+	setbuf(stdout, NULL);
+	int numeroUnoIngresado;
+	int numeroDosIngresado;
+	int suma;
+	int sumaDos;
+
+
+	printf("Ingrese primer numero \n");
+	scanf("%d", &numeroUnoIngresado);
+	fflush(stdin);
+	printf("Ingrese segundo numero \n");
+	scanf("%d", &numeroDosIngresado);
+
+	suma = sumarUno(numeroUnoIngresado, numeroDosIngresado);
+	printf("La suma uno es   %d \n", suma);
+
+	sumaDos = sumarDos();
+	printf("La suma dos es   %d \n", sumaDos);
+
+	sumarTres(numeroUnoIngresado, numeroDosIngresado);
+
+    sumarcuatro();
+
+
+	return 0;
+} // fin del main
+int sumarUno(int numeroUno, int numeroDos) {
+	int sumaRetorno;
+	sumaRetorno = numeroUno + numeroDos;
+	return sumaRetorno;
+} // fin sumarUno
+
+int sumarDos(void) {
+
+	int numeroUnoIngresado;
+	int numeroDosIngresado;
+	int sumaRetorno;
+
+	printf("Ingrese un numero \n");
+	scanf("%d", &numeroUnoIngresado);
+	fflush(stdin);
+	printf("Ingrese  otro numero \n");
+	scanf("%d", &numeroDosIngresado);
+
+	sumaRetorno = numeroUnoIngresado + numeroDosIngresado;
+
+	return sumaRetorno;
+
+} // fin sumarDos
+
+
+void sumarTres(int datoUno , int datoDos){
+
+	int suma;
+
+	suma = datoUno + datoDos;
+	printf("\nLa suma tres es   %d \n", suma);
+
+}// fin de la funciontres.
+void sumarCuatro(void) {
+	int numeroUnoIngresado;
+		int numeroDosIngresado;
+		int suma;
+
+		printf("Ingrese un numero \n");
+		scanf("%d", &numeroUnoIngresado);
+		fflush(stdin);
+		printf("Ingrese  otro numero \n");
+		scanf("%d", &numeroDosIngresado);
+
+		suma = numeroUnoIngresado + numeroDosIngresado;
+
+		printf("\n La suma cuatro es   %d \n", suma);
+
+} // fin sumarCuatro.

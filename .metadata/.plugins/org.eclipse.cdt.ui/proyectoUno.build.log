@@ -1,0 +1,8 @@
+21:18:52 **** Incremental Build of configuration Debug for project proyectoUno ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\proyectoUno.o" "..\\src\\proyectoUno.c" 
+gcc -o proyectoUno.exe "src\\calculos.o" "src\\proyectoUno.o" 
+gcc: error: src\calculos.o: No such file or directory
+
+21:18:53 Build Finished. 0 errors, 0 warnings. (took 1s.159ms)
+

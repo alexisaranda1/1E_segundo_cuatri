@@ -1,0 +1,36 @@
+/*
+ ============================================================================
+ Name        : ejercicio3.2.c
+
+Crear una función que permita determinar si un número es par o no. La función
+retorna 1 en caso afirmativo y 0 en caso contrario. Probar en el main.
+
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int numeroIngresado;
+
+	printf ("Ingrese un numero: \n");
+	scanf("%d",&numeroIngresado);
+	fflush(stdin);
+	printf ("Ingrese un numero: %d ", numeroIngresado);
+} //fin de la funcion main...
+/*
+
+// funcion par.
+int numeroPar (int numero){
+
+	int retorno =0;
+
+	if (numero % 2 == 0) {
+			retorno =1;
+		}
+
+ return retorno;
+}
+ // fin de la funcion numeroPar.
+*/

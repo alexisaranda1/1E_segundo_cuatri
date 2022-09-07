@@ -1,0 +1,22 @@
+/*
+ * validacion.c
+ *
+ *  Created on: 7 sep. 2022
+ *      Author: Axex Shop
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+char temperaturaValidacion (){
+
+	char grados;
+	do {
+	printf ("Ingrese la  temperatura(f para fahrenheit) O (c para celsius):");
+	scanf ("%c",&grados);
+
+	} while (!(grados == 'f' || grados =='c'));
+	return grados ;
+
+} // fIN DE TEMERATURA.
+
