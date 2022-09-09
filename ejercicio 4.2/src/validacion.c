@@ -8,43 +8,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int gradoValidacion (){
+#include "calculos.h"
+
+int  gradoValidacion (){
 
 	char grados;
-    int retorno=-1;
-	do {
 
+	int temperaturaF=0;
+    int temperaturaC=0;
+    int retorno=0;
+
+	do {
 	printf ("Ingrese la  temperatura(f para fahrenheit) O (c para celsius):");
 	 fflush(stdin);
 	scanf ("%c",&grados);
 
 	} while (!(grados == 'f' || grados =='c'));
 
-	if (grados == 'f'){
-		retorno = 0;
-	}else if ( grados == 'c'){
-		retorno = 1;
-	}
-
-	return retorno;
-} // fIN DE TEMERATURA.
-
-int temperaturaValidacion (int grados){
-
-	int temperaturaF=0;
-	int temperaturaC=0;
-	int retorno;
 
 	switch (grados) {
-
-		case 0:
+		case 'f':
 		do {
 			printf ("Ingrese la  temperatura: ");
 			scanf ("%d",&temperaturaF);
 		} while ((temperaturaF < 32 || temperaturaF > 212 ));
 			  break;
 
-		case 1:
+		case 'c':
 			do {
 				printf ("Ingrese la  temperatura: ");
 				scanf ("%d",&temperaturaC);
@@ -53,14 +43,11 @@ int temperaturaValidacion (int grados){
 			  break;
 		}
 
-	if (temperaturaF !=0){
-		retorno = temperaturaF;
-	}else {
-		retorno= temperaturaC;
-	}
+	 conversionTemperaturas ( temperaturaF,temperaturaC);
 
-return retorno;
+ return retorno;
+ }// fIN DE TEMERATURA.
 
-} // fIN DE TEMERATURA.
+
 
 

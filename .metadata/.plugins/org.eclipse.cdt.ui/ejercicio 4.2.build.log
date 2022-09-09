@@ -1,1 +1,23 @@
-Info: Nothing to build for ejercicio 4.2
+03:35:58 **** Rebuild of configuration Debug for project ejercicio 4.2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicio 4.2.o" "..\\src\\ejercicio 4.2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\validacion.o" "..\\src\\validacion.c" 
+..\src\validacion.c: In function 'gradoValidacion':
+..\src\validacion.c:46:3: warning: implicit declaration of function 'conversionTemperaturas' [-Wimplicit-function-declaration]
+   conversionTemperaturas ( temperaturaF,temperaturaC);
+   ^~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\calculos.o" "..\\src\\calculos.c" 
+..\src\calculos.c: In function 'conversionTemperaturas':
+..\src\calculos.c:18:7: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+       printf("transformación de fahrenheit: %d , a celsius es : %d",temperaturaF , celsius );
+       ^~~~~~
+..\src\calculos.c:18:7: warning: incompatible implicit declaration of built-in function 'printf'
+..\src\calculos.c:18:7: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\src\calculos.c:20:10: warning: incompatible implicit declaration of built-in function 'printf'
+          printf ("transformación de celsius: %d , a fahrenheit es : %d",temperaturaC ,fahrenheit );
+          ^~~~~~
+..\src\calculos.c:20:10: note: include '<stdio.h>' or provide a declaration of 'printf'
+gcc -o "ejercicio 4.2.exe" "src\\calculos.o" "src\\ejercicio 4.2.o" "src\\validacion.o" 
+
+03:36:01 Build Finished. 0 errors, 4 warnings. (took 2s.674ms)
+

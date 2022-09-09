@@ -7,7 +7,6 @@
 
 #ifndef CALCULOS_H_
 #define CALCULOS_H_
-
-int calculos ();
-
+ int  conversionA_celsius (int temperaturaF);
+ int  conversionA_Fahrenheit (int temperaturaC);
 #endif /* CALCULOS_H_ */

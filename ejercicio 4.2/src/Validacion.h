@@ -7,8 +7,5 @@
 
 #ifndef VALIDACION_H_
 #define VALIDACION_H_
-
-char gradoValidacion ();
-int temperaturaValidacion (char);
-
+int gradoValidacion ();
 #endif /* VALIDACION_H_ */
